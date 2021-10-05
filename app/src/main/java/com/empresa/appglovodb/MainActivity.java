@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
         user=(EditText)findViewById(R.id.User);
         pass=(EditText)findViewById(R.id.Pass);
@@ -35,8 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dao= new daoUsuario(this);
 
         //traer el nombre
-
-
+        
         usuario=user.getText();
     }
 
