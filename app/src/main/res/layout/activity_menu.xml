@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".MenuActivity">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+          <include
+              layout="@layout/main_toolbar"/>
+
+         <com.synnapps.carouselview.CarouselView
+             android:layout_width="match_parent"
+             android:layout_height="300dp"
+             app:slideInterval="3000"
+             app:radius="6dp"
+             app:strokeColor="@android:color/white"
+             app:strokeWidth="1dp"
+             android:id="@+id/carrousel"
+
+             />
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="322dp"
+             android:gravity="center"
+             android:text=" la cocina Peruana ha crecido hasta convertirse en una de la las más finas del mundo. La variedad de especies, así como la mezcla de varias culturas convierten a las comidas típicas peruanas en propuestas únicas."
+             android:textSize="16sp"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/nombreUsuario"
+             android:layout_width="241dp"
+             android:layout_height="55dp"
+             android:layout_gravity="center"
+             android:layout_margin="3dp"
+             android:layout_weight="1"
+             android:text="HOLA USUARIO"
+             android:textAlignment="center"
+             android:textColor="@android:color/holo_purple"
+             android:textStyle="bold" />
+     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include
+            layout="@layout/main_nav_drawer" />
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
