@@ -14,7 +14,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    EditText user, pass;
+    EditText user, pass, pass2;
     Button btnEntrar, btnRegistrar;
     daoUsuario dao;
     // recogiendo el nombre
