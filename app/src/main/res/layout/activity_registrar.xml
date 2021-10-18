@@ -7,13 +7,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Registrar">
-    
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_margin="25dp"
         android:layout_weight="1"
         android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textSize="25dp"
         android:text="CREAR NUEVA CUENTA"/>
 
 
@@ -51,29 +53,36 @@
         android:layout_weight="1"
         android:hint="Apellidos"
         android:inputType="textPersonName"/>
+
     <Button
         android:id="@+id/btnRegRegistrar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:layout_weight="1"
-        android:background="#FF0000"
+        android:background="@drawable/button_rounded_blue"
         android:text="Registrar"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
+
     <Button
         android:id="@+id/btnRegCancelar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         android:layout_weight="1"
-        android:background="#FF0000"
+        android:background="@drawable/button_roudend_red"
+        android:onClick="onClick"
         android:text="Cancelar"
         android:textColor="#ffffff"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:onClick="onClick"/>
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

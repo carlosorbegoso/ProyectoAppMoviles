@@ -36,7 +36,7 @@ public class AboutUs extends AppCompatActivity {
 
     public void ClickDashboard(View view){
 
-        MenuActivity.redirectActivity(this,PedidoNuevoActivity.class);
+        MenuActivity.redirectActivity(this, PlatoNuevoActivity.class);
     }
     public  void ClickAboutUs(View view){
 

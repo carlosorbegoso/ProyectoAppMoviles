@@ -10,15 +10,15 @@ import com.empresa.appglovodb.DAO.CategoriaDAO
 import com.empresa.appglovodb.DAO.PedidoDAO
 import com.empresa.appglovodb.Entidades.Categorias
 import com.empresa.appglovodb.Entidades.Pedido
-import kotlinx.android.synthetic.main.activity_pedidos_categoria.*
+import kotlinx.android.synthetic.main.activity_platos_categoria.*
 
-class PedidosCategoriaActivity : AppCompatActivity() {
+class PlatosCategoriaActivity : AppCompatActivity() {
 
     var list_cat = ArrayList<Categorias>()
     var arreglo_pedidos = ArrayList<Pedido>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pedidos_categoria)
+        setContentView(R.layout.activity_platos_categoria)
 
       MostrarCategorias()
         //establecer evento OnItemSelected

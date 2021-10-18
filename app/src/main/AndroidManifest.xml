@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-    <activity android:name=".PedidosCategoriaActivity"></activity>
+    <activity android:name=".PlatosCategoriaActivity"></activity>
         <activity android:name=".PedidoEliminarActivity" />
         <activity android:name=".AboutUs" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".Registrar" />
         <activity android:name=".PedidoListarActivity" />
         <activity android:name=".PedidoListarStringActivity" />
-        <activity android:name=".PedidoNuevoActivity" />
+        <activity android:name=".PlatoNuevoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

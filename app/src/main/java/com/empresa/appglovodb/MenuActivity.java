@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,15 +19,13 @@ import com.synnapps.carouselview.ImageListener;
 
 public class MenuActivity  extends AppCompatActivity {
 
-
-
     // variable carrucel
     private int [] mImages = new int[]{
-            R.drawable.icon_ceviche , R.drawable.icon_causa,R.drawable.icon_lomo,R.drawable.icon_pollo,
-            R.drawable.icon_rocoto
+            R.drawable.baner_barbecue , R.drawable.baner_cecina,R.drawable.baner_jugo,R.drawable.baner_pollo,
+            R.drawable.baner_rocoto
     };
     private String[] mImagesTitle=new String[]{
-            "Ceviche","Causa","Lomo Saltado","Pollo a la braza","Rocoto"
+            "Barbecue","Cecina","Jugo","Pollo a la braza","Rocoto"
     };
 
 
@@ -93,7 +90,7 @@ public class MenuActivity  extends AppCompatActivity {
 
     public void ClickDashboard(View view){
 
-        redirectActivity(this,PedidoNuevoActivity.class);
+        redirectActivity(this, PlatoNuevoActivity.class);
     }
 
     public  void ClickAboutUs(View view){

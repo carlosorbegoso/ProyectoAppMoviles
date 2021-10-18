@@ -19,8 +19,10 @@ class PedidoListarStringActivity : AppCompatActivity() {
         var adaptador= ArrayAdapter<String>(this,
             android.R.layout.simple_list_item_1,
             arreglo_string)
-        
+
         //
+
+        
         lvPedidos.adapter=adaptador
 
     }

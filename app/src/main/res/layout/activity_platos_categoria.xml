@@ -5,23 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PedidosCategoriaActivity">
+    tools:context=".PlatosCategoriaActivity">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CONSULTA PEDIDOS POR CATEGORIA"
+        android:text="CATEGORIA"
         android:textAlignment="center"
-        android:textColor="#7CF402"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textColor="#25AA9E"
+        android:textSize="30sp"
+        android:textStyle="bold"  />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Seleccione una categoria:"
+        android:pointerIcon="top_left_diagonal_double_arrow"
         android:textSize="20sp" />
 
     <Spinner

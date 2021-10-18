@@ -11,14 +11,14 @@ import com.empresa.appglovodb.DAO.CategoriaDAO
 import com.empresa.appglovodb.DAO.PedidoDAO
 import com.empresa.appglovodb.Entidades.Categorias
 import com.empresa.appglovodb.Entidades.Pedido
-import kotlinx.android.synthetic.main.activity_pedido_nuevo.*
+import kotlinx.android.synthetic.main.activity_plato_nuevo.*
 
-class PedidoNuevoActivity : AppCompatActivity() {
+class PlatoNuevoActivity : AppCompatActivity() {
     var list_cat=ArrayList<Categorias>()
     var drawerLayout: DrawerLayout? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pedido_nuevo)
+        setContentView(R.layout.activity_plato_nuevo)
         btnNuevo.setOnClickListener {
             edtCodigo.setText("")
             edtNombre.setText("")
@@ -84,7 +84,7 @@ class PedidoNuevoActivity : AppCompatActivity() {
     }
 
     fun BotonPedidoPorCategoria(v: View){
-      var i= Intent(this,PedidosCategoriaActivity::class.java)
+      var i= Intent(this,PlatosCategoriaActivity::class.java)
      startActivity(i)
 
     }
