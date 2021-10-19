@@ -34,7 +34,7 @@ class PlatosCategoriaActivity : AppCompatActivity() {
                 ListarPedidosPorCategoria(cod)
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+              //  TODO("Not yet implemented")
             }
 
         }
