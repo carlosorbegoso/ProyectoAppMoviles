@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_pedido_eliminar.*
 
 class PedidoEliminarActivity : AppCompatActivity() {
 
-    var cod=0 // Codigo
+    var cod=0 // Codigo en cero
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pedido_eliminar)
