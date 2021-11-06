@@ -2,15 +2,20 @@ package com.empresa.appglovodb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.Calendar;
+
 public class Registrar extends AppCompatActivity implements View.OnClickListener {
-    EditText us, pas, nom, ap;
+    DatePickerDialog.OnDateSetListener setListener;
+    EditText us, pas, nom, ap, etDate;
     Button reg, can;
     daoUsuario dao;
 
@@ -22,11 +27,32 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
         pas =(EditText) findViewById(R.id.RegPass);
         nom =(EditText) findViewById(R.id.RegNombre);
         ap =(EditText) findViewById(R.id.RegApellido);
+        etDate =(EditText) findViewById(R.id.et_date);
         reg =(Button) findViewById(R.id.btnRegRegistrar);
         can =(Button) findViewById(R.id.btnRegCancelar);
         reg.setOnClickListener(this);
         can.setOnClickListener(this);
         dao = new daoUsuario(this);
+        Calendar calendar = Calendar.getInstance();
+        final int year = calendar.get(Calendar.YEAR);
+        final int month = calendar.get(Calendar.MONTH);
+        final int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        etDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog datePickerDialog = new DatePickerDialog(
+                        Registrar.this, new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker view, int year, int month, int day) {
+                                month = month + 1;
+                                String date = year + "/" + month + "/" + day;
+                                etDate.setText(date);
+                            }
+                }, year, month, day);
+                datePickerDialog.show();
+            }
+        });
 
     }
 
@@ -58,6 +84,7 @@ public class Registrar extends AppCompatActivity implements View.OnClickListener
                break;
            }
        }
+
 
     }
 

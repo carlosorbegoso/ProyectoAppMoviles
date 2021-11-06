@@ -54,6 +54,17 @@
         android:hint="Apellidos"
         android:inputType="textPersonName"/>
 
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:focusable="false"
+        android:hint="Fecha de nacimiento" />
+
+
     <Button
         android:id="@+id/btnRegRegistrar"
         android:layout_width="match_parent"
