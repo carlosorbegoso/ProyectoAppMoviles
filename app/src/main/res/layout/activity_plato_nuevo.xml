@@ -136,7 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@drawable/button_roudend_red"
+            android:background="@drawable/btn_color"
             android:onClick="salir"
             android:text="Salir"
             android:textColor="#FFFFFF" />

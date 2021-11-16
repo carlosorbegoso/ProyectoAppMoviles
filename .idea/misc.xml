@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Cibertec/5 ciclo/Desarrollo de aplicaciones moviles/ProyectoAndroid/ProyectoAppMoviles/app/src/main/res/drawable/btn_color.xml" value="0.2203125" />
+        <entry key="..\:/Cibertec/5 ciclo/Desarrollo de aplicaciones moviles/ProyectoAndroid/ProyectoAppMoviles/app/src/main/res/drawable/button_border.xml" value="0.16203703703703703" />
+        <entry key="..\:/Cibertec/5 ciclo/Desarrollo de aplicaciones moviles/ProyectoAndroid/ProyectoAppMoviles/app/src/main/res/drawable/button_rounded_blue.xml" value="0.16203703703703703" />
+        <entry key="..\:/Cibertec/5 ciclo/Desarrollo de aplicaciones moviles/ProyectoAndroid/ProyectoAppMoviles/app/src/main/res/drawable/fondo_degradado.xml" value="0.16203703703703703" />
+        <entry key="..\:/Cibertec/5 ciclo/Desarrollo de aplicaciones moviles/ProyectoAndroid/ProyectoAppMoviles/app/src/main/res/layout/activity_main.xml" value="0.1403985507246377" />
+        <entry key="..\:/Cibertec/5 ciclo/Desarrollo de aplicaciones moviles/ProyectoAndroid/ProyectoAppMoviles/app/src/main/res/layout/activity_plato_nuevo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Cibertec/5 ciclo/Desarrollo de aplicaciones moviles/ProyectoAndroid/ProyectoAppMoviles/app/src/main/res/layout/activity_platos_categoria.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
